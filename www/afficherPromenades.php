@@ -14,11 +14,27 @@ $promenade=$database->getPromenadeById($id);
 ?>
 <html>
     <header>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>D&W</title>
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <!-- bootstrap cdn-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <!-- fontawesome-->
+        <script src="https://kit.fontawesome.com/c557fd0a43.js"></script>
+
         <link rel="stylesheet" href="style.css">
+
     </header>
     <body>
+        <div class="container text-center">
         <h1>Information de la promenade</h1>
-
+        <div class="column text-center">
             <p>Auteur: <?php echo $promenade->getAuteur(); ?></p>
             <p>Nom: <?php echo $promenade->getNom(); ?></p>
             <p>Pays: <?php echo $promenade->getPays();?></p>
@@ -29,7 +45,8 @@ $promenade=$database->getPromenadeById($id);
             <p>Itineraire: <?php echo $promenade->getItineraire();?></p>
             
             <br><br>
-            <a href="process-delete.php?id=<?php echo $promenade->getId(); ?>">Supprimer la promenade</a>
-            
+            <a href="process-delete.php?id=<?php echo $promenade->getId(); ?>">Delete</a>
+        </div>
+        </div>  
     </body>
 </html>
