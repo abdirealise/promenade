@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>LAMP STACK</title>
+        <title>D&W</title>
         <link rel="stylesheet" href="/assets/css/bulma.min.css">
     </head>
     <body>
@@ -11,7 +11,7 @@
             <div class="hero-body">
                 <div class="container has-text-centered">
                     <h1 class="title">
-                        LAMP STACK
+                        Discover & Workout
                     </h1>
                     <h2 class="subtitle">
                         Your local development environment
@@ -37,9 +37,11 @@
                         <hr>
                         <div class="content">
                             <ul>
-                                <li><a href="http://localhost/phpinfo.php">phpinfo()</a></li>
-                                <li><a href="http://localhost/test_db.php">test db</a></li>
-                                <li><a href="http://localhost:8080">phpMyAdmin</a></li>
+                                <li><a href="http://localhost/phpinfo.php">Infos</a></li>
+                                <li><a href="http://localhost/test_db.php">Test</a></li>
+                                <li><a href="http://localhost/formulaire.php">Formulaire</a></li>
+                                <li><a href="http://localhost:9000">phpMyAdmin</a></li>
+                                <li><a href="http://localhost/afficherPromenades.php">Promenades</a></li>
                             </ul>
                         </div>
                     </div>

@@ -1,5 +1,5 @@
 <?php
-require_once ("classPromenade.php");
+require_once ("classPromenades.php");
 
 class Database{
     //attributs
@@ -29,6 +29,50 @@ class Database{
         }
     }
 
-    
+    //Les fonctions (le comportement)
+    public function getConnexion(){
+        return $this->connexion;
+    }
+
+    //Fonction pour insérer une nouvelle promenade
+    public function insertPromenade($auteur,$nom,$pays,$ville,$npa,$depart,$arrivee,$itineraire){
+        // Je prépare la requête
+        $pdoStatement = $this->connexion->prepare(
+            "INSERT INTO Promenades (auteur,nom,pays,ville,npa,depart,arrivee,itineraire) 
+             VALUES (:paramAuteur,:paramNom,:paramPays,:paramVille,:paramNpa,:paramDepart,:paramArrivee,:paramItineraire)");
+
+            //J'exécute la requête
+            $pdoStatement->execute(
+                array(
+                "paramAuteur"=> $auteur,
+                "paramNom"=> $nom,
+                "paramPays"=> $pays,
+                "paramVille"=> $ville,
+                "paramNpa"=> $npa,
+                "paramDepart"=> $depart,
+                "paramArrivee"=> $arrivee,
+                "paramItineraire"=> $itineraire));
+
+            //Pour débugger et verifier que tout s'est bien passé
+            //var_dump($pdoStatement->errorInfo());
+
+            //Je récupère l'id qui a été crée par la base de données
+            $id=$this->connexion->lastInsertId();
+            return $id;
+    }
+
+
+    public function getPromenadeById($id){
+        
+        $pdoStatement=$this->connexion->prepare("SELECT id,auteur,nom,pays,ville,npa,depart,arrivee,itineraire 
+        FROM Promenades WHERE id = :idPromenade");
+
+        $pdoStatement->execute(
+            array("idPromenade"=>$id)
+        );
+
+        return $pdoStatement->fetchObject("Promenade");
+    }
+
 }
 ?>

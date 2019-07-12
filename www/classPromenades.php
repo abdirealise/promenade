@@ -1,5 +1,5 @@
 <?php
-class Promenades{
+class Promenade {
     //Attributs
     private $id;
     private $auteur;
@@ -10,6 +10,7 @@ class Promenades{
     private $depart;
     private $arrivee;
     private $itineraire;
+    private $photo;
 
     //constructeur par default
 
@@ -42,6 +43,9 @@ class Promenades{
     }
     public function getItineraire(){
         return $this->itineraire;
+    }
+    public function getPhoto(){
+        return $this->photo;
     }
 
 }
