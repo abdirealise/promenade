@@ -68,26 +68,19 @@
 
         <label for="arrivee">Arrivee</label>
         <input type="text" id="arrivee" name="arrivee" placeholder="Paquis"><br><br>
-        </form>
         
-        <div class="upload_container">
-                <br clear="all" />
-                <div id='preview'></div>
-                <form id="image" enctype="multipart/form-data" action="upload.php" method="post" class="change-pic">
-                <label for="image">Inserer une image</label>
-                <input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
+        <label for="image">Inserer une image</label>
+        <input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
                 <input style="padding-left:20px; color:#4d4d4d" type="file"  id="file" name="image" accept="image/*" />
                 <script type="text/javascript">
                 document.getElementById("file").onchange = function() {
                 document.getElementById("image").submit();
                 };
                 </script>
-                </div>
-                </div><br><br>
-                </form>
-                <form action = "process-create.php" method="post">
-                <label for="itineraire">Itineraire</label>
-                <textarea rows="10" cols="50" type="text" id="itineraire" name="itineraire" placeholder="Rive,Bel-Air,Cornavin"></textarea>
+                <br><br>
+                
+          <label for="itineraire">Itineraire</label>
+          <textarea rows="10" cols="50" type="text" id="itineraire" name="itineraire" placeholder="Rive,Bel-Air,Cornavin"></textarea>
 
                 
         <input type="submit">

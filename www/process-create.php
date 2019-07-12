@@ -9,7 +9,7 @@ $ville = $_POST['ville'];
 $npa = $_POST['npa'];
 $depart = $_POST['depart'];
 $arrivee = $_POST['arrivee'];
-$image = $_POST['image'];
+$image = $_SERVER['image'];
 $itineraire = $_POST['itineraire'];
 //Importer et instancier une database
 require_once("database.php");
