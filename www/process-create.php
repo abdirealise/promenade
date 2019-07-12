@@ -9,6 +9,7 @@ $ville = $_POST['ville'];
 $npa = $_POST['npa'];
 $depart = $_POST['depart'];
 $arrivee = $_POST['arrivee'];
+$image = $_POST['image'];
 $itineraire = $_POST['itineraire'];
 //Importer et instancier une database
 require_once("database.php");
@@ -17,7 +18,7 @@ $database = new Database();
 //appeler la fonction insterDog en lui passant les infos du formulaire
 //récupérer le nouvel id du chien crée
 //insertDog($nom,$age,$race,$idMaitre)
-$nouvelId = $database->insertPromenade($auteur,$nom,$pays,$ville,$npa,$depart,$arrivee,$itineraire);
+$nouvelId = $database->insertPromenade($auteur,$nom,$pays,$ville,$npa,$depart,$arrivee,$image,$itineraire);
 
 //Rediriger l'utilisateur  vers la page du profit du nouveau chien 
 header("Location:afficherPromenades.php?id=".$nouvelId);

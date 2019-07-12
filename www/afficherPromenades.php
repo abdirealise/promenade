@@ -43,6 +43,7 @@ $promenade=$database->getPromenadeById($id);
             <p>Depart: <?php echo $promenade->getDepart();?></p>
             <p>Arrivee: <?php echo $promenade->getArrivee(); ?></p>
             <p>Itineraire: <?php echo $promenade->getItineraire();?></p>
+            <p>Image: <?php echo $promenade->getImage();?></p>
             
             <br><br>
             <a href="process-delete.php?id=<?php echo $promenade->getId(); ?>">Delete</a>
