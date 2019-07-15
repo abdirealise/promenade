@@ -2,6 +2,7 @@
 // Import de la database
 
 require_once ("database.php");
+
 $database = new Database();
 $id = $_GET["id"];
 //Récupération de la liste de promenade
@@ -52,12 +53,14 @@ $listePromenade = $database->getAllPromenade();
   </div>
 </nav>
 
-        <h1> liste des promenades </h1>
+        <h1> Liste des promenades </h1>
 
         <ul>
         <?php foreach($listePromenade as $promenade){ ?>
         <li>
+
         <?php   echo "<a href=afficherPromenades.php?id=".$id=$promenade->getId().">";
+
                 echo "Promenade n°: ".$promenade->getId()."Auteur: ".$promenade->getAuteur().
                 "Nom: ".$promenade->getNom()." Pays: ".$promenade->getPays()." Ville: ".$promenade->getVille().
                 "NPA: ".$promenade->getNpa()." Depart: ".$promenade->getDepart()." Arrivee: ".$promenade->getArrivee().
