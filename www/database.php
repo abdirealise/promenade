@@ -89,6 +89,23 @@ class Database{
 
         return $pdoStatement->fetchObject("Promenade");
     }
+    public function deletePromenade($id){
+        //Je prépare ma requête
+        $pdoStatement = $this->connexion->prepare("DELETE FROM Promenades Where id=:idPromenade");
+        //J'exécute la requête
+        $pdoStatement->execute(
+            array("idPromenade"=>$id)
+        );
+        $errorCode = $pdoStatement->errorCode();
+        if($errorCode == 0){
+            //Si ça c'est bien passé renvoyer true
+            return true;
+        }else{
+            //Si ça c'est mal passé renvoyer false
+            return false;
+        }
+    }
+
 
 }
 ?>
