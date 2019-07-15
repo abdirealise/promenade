@@ -19,7 +19,7 @@
     </head>
     <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-  <a class="navbar-brand text-info" href="#">Discover & Workout</a>
+  <a class="navbar-brand text-info fas fa-globe-europe" href="#"> Discover & Workout</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -100,40 +100,48 @@
 <!-- Footer -->
 <footer class="page-footer font-small teal pt-4 bg-dark text-light">
 
-  <!-- Footer Text -->
+  
   <div class="container-fluid text-center text-md-left">
 
-    <!-- Grid row -->
+    
     <div class="row">
 
-      <!-- Grid column -->
+      
       <div class="col-md-6 mb-md-0 mb-3">
 
-        <!-- Content -->
+        
         <h5 class="text-uppercase font-weight-bold">Contact</h5>
         <p>
-          <i class="fas fa-home mr-3"></i> Rue Viguet 8, 1227 Les Acacias</p>
+          <i class="fas fa-home mr-3"></i>Rue Viguet 8, 1227 Les Acacias</p>
         <p>
-          <i class="fas fa-envelope mr-3"></i> info@realise.ch</p>
+          <i class="fas fa-envelope mr-3"></i>info@realise.ch</p>
         <p>
-          <i class="fas fa-phone mr-3"></i> + 41 (0)22 308 60 10</p>
+          <i class="fas fa-phone mr-3"></i>+ 41 (0)22 308 60 10</p>
+
+        <p>
+          <i class="far fa-id-badge mr-3"></i>  Abdi & Emmanuel</p>
+      </div>
+      <div class="col-md-6 mb-md-0 mb-3">
+      <h5 class="text-uppercase font-weight-bold">Social</h5>
+      <p>
+        <i class="fab fa-discord mr-3"></i>Rejoignez nous sur Discord !</p>
+        <p>
+        <i class="fab fa-facebook mr-3"></i>Rejoignez nous sur Facebook !</p>
+        <p>
+        <i class="fab fa-twitter mr-3"></i>Rejoignez nous sur Twitter !</p>
+        <p>
+        <i class="fab fa-telegram mr-3"></i>Rejoignez nous sur Telegram !</p>
+      
       </div>
 
-      <!-- Grid column -->
-
     </div>
-    <!-- Grid row -->
+  
 
   </div>
-  <!-- Footer Text -->
-
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">By Abdi & Emmanuel
-  </div>
-  <!-- Copyright -->
 
 </footer>
-<!-- Footer -->
+
+
 
 </body>
 </html>

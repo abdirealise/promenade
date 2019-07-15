@@ -32,6 +32,30 @@ $promenade=$database->getPromenadeById($id);
 
     </header>
     <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <a class="navbar-brand text-info fas fa-globe-europe" href="#"> Discover & Workout</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link text-light" href="http://localhost/index.php">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="http://localhost/afficherMenuPromenades.php">Promenades</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="http://localhost/formulaire.php">Créer</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="#footer">Contact</a>
+      </li>
+    </ul>
+    
+  </div>
+</nav>
         <div class="container text-center">
         <h1>Information de la promenade</h1>
         <div class="column text-center">
@@ -48,6 +72,49 @@ $promenade=$database->getPromenadeById($id);
             <br><br>
             <a href="process-delete.php?id=<?php echo $promenade->getId(); ?>">Delete</a>
         </div>
-        </div>  
+        </div>
+        <!--Footer-->
+        <footer class="page-footer font-small teal pt-4 bg-dark text-light">
+
+  
+  <div class="container-fluid text-center text-md-left">
+
+    
+    <div class="row">
+
+      
+      <div class="col-md-6 mb-md-0 mb-3">
+
+        
+        <h5 class="text-uppercase font-weight-bold">Contact</h5>
+        <p>
+          <i class="fas fa-home mr-3"></i>Rue Viguet 8, 1227 Les Acacias</p>
+        <p>
+          <i class="fas fa-envelope mr-3"></i>info@realise.ch</p>
+        <p>
+          <i class="fas fa-phone mr-3"></i>+ 41 (0)22 308 60 10</p>
+
+        <p>
+          <i class="far fa-id-badge mr-3"></i>  Abdi & Emmanuel</p>
+      </div>
+      <div class="col-md-6 mb-md-0 mb-3">
+      <h5 class="text-uppercase font-weight-bold">Social</h5>
+      <p>
+        <i class="fab fa-discord mr-3"></i>Rejoignez nous sur Discord !</p>
+        <p>
+        <i class="fab fa-facebook mr-3"></i>Rejoignez nous sur Facebook !</p>
+        <p>
+        <i class="fab fa-twitter mr-3"></i>Rejoignez nous sur Twitter !</p>
+        <p>
+        <i class="fab fa-telegram mr-3"></i>Rejoignez nous sur Telegram !</p>
+      
+      </div>
+
+    </div>
+  
+
+  </div>
+
+</footer>  
     </body>
 </html>
