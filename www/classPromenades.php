@@ -9,8 +9,9 @@ class Promenade {
     private $npa;
     private $depart;
     private $arrivee;
+    private $image;
     private $itineraire;
-    private $photo;
+  
 
     //constructeur par default
 
@@ -44,8 +45,8 @@ class Promenade {
     public function getItineraire(){
         return $this->itineraire;
     }
-    public function getPhoto(){
-        return $this->photo;
+    public function getImage(){
+        return $this->image;
     }
 
 }

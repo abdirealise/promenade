@@ -10,6 +10,7 @@ create table Promenades (
     npa varchar (255),
     depart varchar (255),
     arrivee varchar (255),
+    image BLOB,
     itineraire varchar (255)
 );
 

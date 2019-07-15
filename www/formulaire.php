@@ -1,5 +1,5 @@
 <html>
-<header>
+<head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>D&W</title>
@@ -15,7 +15,7 @@
         <script src="https://kit.fontawesome.com/c557fd0a43.js"></script>
 
         <link rel="stylesheet" href="style.css">
-</header>
+</head>
 
 
 <body>
@@ -48,31 +48,41 @@
 
     <form action = "process-create.php" method="post">
 
-        <label for="auteur">Auteur</label>
-        <input type="text" id="auteur" name="auteur" placeholder="Abdi">
+        <label for="auteur">Auteur</label><br>
+        <input type="text" id="auteur" name="auteur" placeholder="Abdi"><br>
 
-        <label for="nom">Nom</label>
-        <input type="text" id="nom" name="nom" placeholder="Lac Léman">
+        <label for="nom">Nom</label><br>
+        <input type="text" id="nom" name="nom" placeholder="Lac Léman"><br>
 
-        <label for="pays">Pays</label>
-        <input type="text" id="pays" name="pays" placeholder="Suisse">
+        <label for="pays">Pays</label><br>
+        <input type="text" id="pays" name="pays" placeholder="Suisse"><br>
 
-        <label for="ville">Ville</label>
-        <input type="text" id="ville" name="ville" placeholder="Genève">
+        <label for="ville  ">Ville</label><br>
+        <input type="text" id="ville" name="ville" placeholder="Genève"><br>
 
-        <label for="npa">NPA</label>
-        <input type="text" id="npa" name="npa" placeholder="1200">
+        <label for="npa">NPA</label><br>
+        <input type="text" id="npa" name="npa" placeholder="1200"><br>
 
-        <label for="depart">Depart</label>
-        <input type="text" id="depart" name="depart" placeholder="Eaux-Vives">
+        <label for="depart">Depart</label><br>
+        <input type="text" id="depart" name="depart" placeholder="Eaux-Vives"><br>
 
-        <label for="arrivee">Arrivee</label>
-        <input type="text" id="arrivee" name="arrivee" placeholder="Paquis">
-
-        <label for="itineraire">Itineraire</label>
-        <textarea rows="10" cols="50" type="text" id="itineraire" name="itineraire" placeholder="Rive,Bel-Air,Cornavin"></textarea>
-
+        <label for="arrivee">Arrivee</label><br>
+        <input type="text" id="arrivee" name="arrivee" placeholder="Paquis"><br><br>
         
+        <label for="image">Inserer une image</label><br>
+        <input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
+                <input style="padding-left:20px; color:#4d4d4d" type="file"  id="file" name="image" accept="image/*" />
+                <script type="text/javascript">
+                document.getElementById("file").onchange = function() {
+                document.getElementById("image").submit();
+                };
+                </script>
+                <br><br>
+                
+          <label for="itineraire">Itineraire</label><br>
+          <textarea rows="10" cols="50" type="text" id="itineraire" name="itineraire" placeholder="Rive,Bel-Air,Cornavin"></textarea>
+
+                
         <input type="submit">
 </div>
     </form>

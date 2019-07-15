@@ -35,11 +35,11 @@ class Database{
     }
 
     //Fonction pour insérer une nouvelle promenade
-    public function insertPromenade($auteur,$nom,$pays,$ville,$npa,$depart,$arrivee,$itineraire){
+    public function insertPromenade($auteur,$nom,$pays,$ville,$npa,$depart,$arrivee,$image,$itineraire){
         // Je prépare la requête
         $pdoStatement = $this->connexion->prepare(
-            "INSERT INTO Promenades (auteur,nom,pays,ville,npa,depart,arrivee,itineraire) 
-             VALUES (:paramAuteur,:paramNom,:paramPays,:paramVille,:paramNpa,:paramDepart,:paramArrivee,:paramItineraire)");
+            "INSERT INTO Promenades (auteur,nom,pays,ville,npa,depart,arrivee,image,itineraire) 
+             VALUES (:paramAuteur,:paramNom,:paramPays,:paramVille,:paramNpa,:paramDepart,:paramArrivee,:paramImage,:paramItineraire)");
 
             //J'exécute la requête
             $pdoStatement->execute(
@@ -51,6 +51,7 @@ class Database{
                 "paramNpa"=> $npa,
                 "paramDepart"=> $depart,
                 "paramArrivee"=> $arrivee,
+                "paramImage"=> $image,
                 "paramItineraire"=> $itineraire));
 
             //Pour débugger et verifier que tout s'est bien passé
@@ -79,7 +80,7 @@ class Database{
 
     public function getPromenadeById($id){
         
-        $pdoStatement=$this->connexion->prepare("SELECT id,auteur,nom,pays,ville,npa,depart,arrivee,itineraire 
+        $pdoStatement=$this->connexion->prepare("SELECT id,auteur,nom,pays,ville,npa,depart,arrivee,image,itineraire 
         FROM Promenades WHERE id = :idPromenade");
 
         $pdoStatement->execute(
