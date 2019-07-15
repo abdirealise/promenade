@@ -31,7 +31,7 @@
         <a class="nav-link text-light" href="http://localhost/index.php">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-light" href="http://localhost/afficherPromenades.php">Promenades</a>
+        <a class="nav-link text-light" href="http://localhost/afficherMenuPromenades.php">Promenades</a>
       </li>
       <li class="nav-item">
         <a class="nav-link text-warning">Créer</a>
@@ -87,7 +87,7 @@
 </div>
     </form>
     <!-- Footer -->
-<footer class="page-footer font-small teal pt-4 bg-dark text-light">
+<footer id = footer class="page-footer font-small teal pt-4 bg-dark text-light">
 
 <!-- Footer Text -->
 <div class="container-fluid text-center text-md-left">

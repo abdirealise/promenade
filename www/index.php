@@ -98,7 +98,7 @@
     </div>
 
 <!-- Footer -->
-<footer class="page-footer font-small teal pt-4 bg-dark text-light">
+<footer id = footer class="page-footer font-small teal pt-4 bg-dark text-light">
 
   <!-- Footer Text -->
   <div class="container-fluid text-center text-md-left">
