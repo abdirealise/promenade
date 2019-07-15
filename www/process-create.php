@@ -15,12 +15,11 @@ $itineraire = $_POST['itineraire'];
 require_once("database.php");
 $database = new Database();
 
-//appeler la fonction insterDog en lui passant les infos du formulaire
-//récupérer le nouvel id du chien crée
-//insertDog($nom,$age,$race,$idMaitre)
+//appeler la fonction en lui passant les infos du formulaire
+
 $nouvelId = $database->insertPromenade($auteur,$nom,$pays,$ville,$npa,$depart,$arrivee,$image,$itineraire);
 
-//Rediriger l'utilisateur  vers la page du profit du nouveau chien 
+//Rediriger l'utilisateur 
 header("Location:afficherPromenades.php?id=".$nouvelId);
 
 ?>
