@@ -74,7 +74,7 @@
       <div class="col-md-6 mt-md-0 mt-3">
 
         <!--Text 1-->
-        <h5 class="text-uppercase font-weight-bold">Familles</h5>
+        <h5 class="text-uppercase font-weight-bold mt-3">Familles</h5>
         <hr>
         <p>Sur ce site, les familles auront la possibilité de partager entre elles les meilleurs endroits à visiter.
           Des lieux remplis d'histoire, des points de vue à couper le souffle, ...
@@ -86,7 +86,7 @@
       <div class="col-md-6 mb-md-0 mb-3">
         
         <!--Text 2-->
-        <h5 class="text-uppercase font-weight-bold">Sportifs</h5>
+        <h5 class="text-uppercase font-weight-bold mt-3">Sportifs</h5>
         <hr>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio deserunt fuga perferendis modi earum
           commodi aperiam temporibus quod nulla nesciunt aliquid debitis ullam omnis quos ipsam, aspernatur id
