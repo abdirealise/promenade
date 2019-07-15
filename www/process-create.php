@@ -19,7 +19,7 @@ $database = new Database();
 //insertDog($nom,$age,$race,$idMaitre)
 $nouvelId = $database->insertPromenade($auteur,$nom,$pays,$ville,$npa,$depart,$arrivee,$itineraire);
 
-//Rediriger l'utilisateur  vers la page du profit du nouveau chien 
+
 header("Location:afficherPromenades.php?id=".$nouvelId);
 
 ?>

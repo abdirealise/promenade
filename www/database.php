@@ -61,6 +61,21 @@ class Database{
             return $id;
     }
 
+    //fonction pour récupérer tous les promenades
+    public function getAllPromenade(){
+        
+        //Préparation de la requête
+        $pdoStatement = $this->connexion->prepare(
+            "SELECT* FROM Promenades"
+        );
+        //execution de la requête
+        $pdoStatement->execute();
+        //récupérer les données
+        $promenades = $pdoStatement->fetchAll(PDO::FETCH_CLASS,"Promenade");
+        //je retourne ma liste
+        return $promenades;
+    }
+
 
     public function getPromenadeById($id){
         
