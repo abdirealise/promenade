@@ -67,7 +67,10 @@ $promenade=$database->getPromenadeById($id);
             <p>Depart: <?php echo $promenade->getDepart();?></p>
             <p>Arrivee: <?php echo $promenade->getArrivee(); ?></p>
             <p>Itineraire: <?php echo $promenade->getItineraire();?></p>
+
             <p>Image: <?php echo $promenade->getImage();?></p>
+
+            <img src="<?php echo $promenade->getImage();?>">
             
             <br><br>
             <form action="http://maps.google.com/maps" method="get" target="_blank">

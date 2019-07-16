@@ -47,6 +47,7 @@ class Promenade {
     }
     public function getImage(){
         return $this->image;
+    
     }
 
 }

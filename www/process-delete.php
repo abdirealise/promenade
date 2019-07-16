@@ -5,7 +5,7 @@ require_once("database.php");
 $database = new Database();
 //Récupérer l'id depuis l'url
 $id = $_GET["id"];
-//Je supprime le chien et je récupère le résultat
+
 $resultat = $database->deletePromenade($id);
 if($resultat == true){
 

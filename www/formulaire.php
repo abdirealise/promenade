@@ -46,7 +46,7 @@
 <div>
     <h1>Création d'une nouvelle promenade </h1>
 
-    <form action = "process-create.php" method="post">
+    <form action = "process-create.php" method="post" enctype="multipart/form-data">
 
         <label for="auteur">Auteur</label><br>
         <input type="text" id="auteur" name="auteur" placeholder="Abdi"><br>
@@ -70,13 +70,9 @@
         <input type="text" id="arrivee" name="arrivee" placeholder="Paquis"><br><br>
         
         <label for="image">Inserer une image</label><br>
-        <input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
-                <input style="padding-left:20px; color:#4d4d4d" type="file"  id="file" name="image" accept="image/*" />
-                <script type="text/javascript">
-                document.getElementById("file").onchange = function() {
-                document.getElementById("image").submit();
-                };
-                </script>
+        <input type="file" name="image" id="fileUpload">
+        <br><br>
+        <p><strong>Note:</strong> Seuls les formats .jpg, .jpeg, .jpeg, .gif, .png sont autorisés jusqu'à une taille maximale de 5 Mo.</p>
                 <br><br>
                 
           <label for="itineraire">Itineraire</label><br>
