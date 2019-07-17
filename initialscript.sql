@@ -22,5 +22,5 @@ FLUSH PRIVILEGES;
 
 -- insérer une promenade
 
-INSERT INTO Promenades (auteur,nom,pays,ville,npa,depart,arrivee,itineraire) VALUES ('Abdi','Lac Léman','Suisse','Genève','1200'
+INSERT INTO Promenades (auteur,nom,pays,ville,npa,depart,arrivee,itineraire) VALUES ('Manu','Lac Léman','Suisse','Genève','1200'
 ,'Eaux-Vives','Paquis','Rive,Bel-Air,Cornavin');

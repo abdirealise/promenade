@@ -110,18 +110,21 @@ $promenade=$database->getPromenadeById($id);
           <i class="far fa-id-badge mr-3"></i>  Abdi & Emmanuel</p>
       </div>
       <div class="col-md-6 mb-md-0 mb-3">
-      <h5 class="text-uppercase font-weight-bold">Social</h5>
-      <p>
-        <i class="fab fa-discord mr-3"></i>Rejoignez nous sur Discord !</p>
-        <p>
-        <i class="fab fa-facebook mr-3"></i>Rejoignez nous sur Facebook !</p>
-        <p>
-        <i class="fab fa-twitter mr-3"></i>Rejoignez nous sur Twitter !</p>
-        <p>
-        <i class="fab fa-telegram mr-3"></i>Rejoignez nous sur Telegram !</p>
-      
-      </div>
+    <h5 class="text-uppercase font-weight-bold">Social</h5>
 
+    <p><a target="_blank" rel="noopener noreferrer" href="https://discord.gg/ANvh99Y%22%3E">
+    <i class="fab fa-discord mr-3 text-light"></i>Rejoignez nous sur Discord !</a></p>
+
+    <p><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/%22%3E">
+    <i class="fab fa-facebook mr-3 text-light"></i>Rejoignez nous sur Facebook !</a></p>
+
+    <p><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/?lang=fr%22%3E">
+    <i class="fab fa-twitter mr-3 text-light"></i>Rejoignez nous sur Twitter !</a></p>
+
+    <p><a target="_blank" rel="noopener noreferrer" href="https://telegram.org/%22%3E">
+    <i class="fab fa-telegram mr-3 text-light"></i>Rejoignez nous sur Telegram !</a></p>
+
+    </div>
     </div>
   
 

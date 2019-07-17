@@ -17,7 +17,8 @@
 
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body class= "bg-secondary">
+      <div class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
   <a class="navbar-brand text-info fas fa-globe-europe" href="#"> Discover & Workout</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -74,23 +75,21 @@
       <div class="col-md-6 mt-md-0 mt-3">
 
         <!--Text 1-->
-        <h5 class="text-uppercase font-weight-bold mt-3">Familles</h5>
+        <h5 class="text-uppercase font-weight-bold mt-3 text-light">Familles</h5>
         <hr>
-        <p>Sur ce site, les familles auront la possibilité de partager entre elles les meilleurs endroits à visiter.
+        <p class= "text-light">Sur ce site, les familles auront la possibilité de partager entre elles les meilleurs endroits à visiter.
           Des lieux remplis d'histoire, des points de vue à couper le souffle, ...
         </p>
 
       </div>
       
       <!--Grille-->
-      <div class="col-md-6 mb-md-0 mb-3">
+      <div class="col-md-6 mb-md-0 mb-3 text-light">
         
         <!--Text 2-->
-        <h5 class="text-uppercase font-weight-bold mt-3">Sportifs</h5>
+        <h5 class="text-uppercase font-weight-bold mt-3 text-light">Sportifs</h5>
         <hr>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio deserunt fuga perferendis modi earum
-          commodi aperiam temporibus quod nulla nesciunt aliquid debitis ullam omnis quos ipsam, aspernatur id
-          excepturi hic.</p>
+        <p>Partager vos spot cross-fit et de trekking avec vos amis et la communaute de Discover & Workout.</p>
 
       </div>
       <!-- Grid column -->
@@ -122,22 +121,27 @@
           <i class="far fa-id-badge mr-3"></i>  Abdi & Emmanuel</p>
       </div>
       <div class="col-md-6 mb-md-0 mb-3">
-      <h5 class="text-uppercase font-weight-bold">Social</h5>
-      <p>
-        <i class="fab fa-discord mr-3"></i>Rejoignez nous sur Discord !</p>
-        <p>
-        <i class="fab fa-facebook mr-3"></i>Rejoignez nous sur Facebook !</p>
-        <p>
-        <i class="fab fa-twitter mr-3"></i>Rejoignez nous sur Twitter !</p>
-        <p>
-        <i class="fab fa-telegram mr-3"></i>Rejoignez nous sur Telegram !</p>
-      
-      </div>
+    <h5 class="text-uppercase font-weight-bold">Social</h5>
+
+    <p><a target="_blank" rel="noopener noreferrer" href="https://discord.gg/ANvh99Y%22%3E">
+    <i class="fab fa-discord mr-3 text-light"></i>Rejoignez nous sur Discord !</a></p>
+
+    <p><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/%22%3E">
+    <i class="fab fa-facebook mr-3 text-light"></i>Rejoignez nous sur Facebook !</a></p>
+
+    <p><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/?lang=fr%22%3E">
+    <i class="fab fa-twitter mr-3 text-light"></i>Rejoignez nous sur Twitter !</a></p>
+
+    <p><a target="_blank" rel="noopener noreferrer" href="https://telegram.org/%22%3E">
+    <i class="fab fa-telegram mr-3 text-light"></i>Rejoignez nous sur Telegram !</a></p>
+
+    </div>
 
     </div>
   
 
   </div>
+</div>
 
 </footer>
 

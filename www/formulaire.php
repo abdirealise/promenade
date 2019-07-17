@@ -49,28 +49,28 @@
     <form action = "process-create.php" method="post" enctype="multipart/form-data">
 
         <label for="auteur">Auteur</label><br>
-        <input type="text" id="auteur" name="auteur" placeholder="Abdi"><br>
+        <input type="text" id="auteur" name="auteur" required placeholder="Manu"><br>
 
-        <label for="nom">Nom</label><br>
-        <input type="text" id="nom" name="nom" placeholder="Lac Léman"><br>
+        <label for="nom">Titre</label><br>
+        <input type="text" id="nom" name="nom" required placeholder="Lac Léman"><br>
 
         <label for="pays">Pays</label><br>
-        <input type="text" id="pays" name="pays" placeholder="Suisse"><br>
+        <input type="text" id="pays" name="pays" required placeholder="Suisse"><br>
 
         <label for="ville  ">Ville</label><br>
-        <input type="text" id="ville" name="ville" placeholder="Genève"><br>
+        <input type="text" id="ville" name="ville" required placeholder="Genève"><br>
 
         <label for="npa">NPA</label><br>
-        <input type="text" id="npa" name="npa" placeholder="1200"><br>
+        <input type="text" id="npa" name="npa" min="4" max="4" required placeholder="1200"><br>
 
         <label for="depart">Depart</label><br>
-        <input type="text" id="depart" name="depart" placeholder="Eaux-Vives"><br>
+        <input type="text" id="depart" name="depart" required placeholder="Eaux-Vives"><br>
 
         <label for="arrivee">Arrivee</label><br>
-        <input type="text" id="arrivee" name="arrivee" placeholder="Paquis"><br><br>
+        <input type="text" id="arrivee" name="arrivee" required placeholder="Paquis"><br><br>
         
         <label for="image">Inserer une image</label><br>
-        <input type="file" name="image" id="fileUpload">
+        <input type="file" name="image" id="fileUpload" required>
         <br><br>
         <p><strong>Note:</strong> Seuls les formats .jpg, .jpeg, .jpeg, .gif, .png sont autorisés jusqu'à une taille maximale de 5 Mo.</p>
                 <br><br>
@@ -79,7 +79,7 @@
           <textarea rows="10" cols="50" type="text" id="itineraire" name="itineraire" placeholder="Rive,Bel-Air,Cornavin"></textarea>
 
                 
-        <input type="submit">
+        <input type="submit" value="Envoyer">
 </div>
     </form>
   
@@ -110,17 +110,20 @@
     </div>
     <div class="col-md-6 mb-md-0 mb-3">
     <h5 class="text-uppercase font-weight-bold">Social</h5>
-    <p>
-      <i class="fab fa-discord mr-3"></i>Rejoignez nous sur Discord !</p>
-      <p>
-      <i class="fab fa-facebook mr-3"></i>Rejoignez nous sur Facebook !</p>
-      <p>
-      <i class="fab fa-twitter mr-3"></i>Rejoignez nous sur Twitter !</p>
-      <p>
-      <i class="fab fa-telegram mr-3"></i>Rejoignez nous sur Telegram !</p>
-    
-    </div>
 
+    <p><a target="_blank" rel="noopener noreferrer" href="https://discord.gg/ANvh99Y%22%3E">
+    <i class="fab fa-discord mr-3 text-light"></i>Rejoignez nous sur Discord !</a></p>
+
+    <p><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/%22%3E">
+    <i class="fab fa-facebook mr-3 text-light"></i>Rejoignez nous sur Facebook !</a></p>
+
+    <p><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/?lang=fr%22%3E">
+    <i class="fab fa-twitter mr-3 text-light"></i>Rejoignez nous sur Twitter !</a></p>
+
+    <p><a target="_blank" rel="noopener noreferrer" href="https://telegram.org/%22%3E">
+    <i class="fab fa-telegram mr-3 text-light"></i>Rejoignez nous sur Telegram !</a></p>
+
+    </div>
   </div>
 
 
